@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 
 penguin_df = pd.read_csv('penguins.csv')
 penguin_df.dropna(inplace=True)
-st.title('Penguin Classifier')
+st.title('Penguin Classifier: A Machine Learning App')
 st.write('This app uses 6 inputs to predict the species of penguin using a model built on the Palmer Penguins dataset.Use the form below to get started!')
 penguin_file = st.file_uploader('Upload your own penguin data')
 if penguin_file is None:
